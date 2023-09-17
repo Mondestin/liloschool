@@ -15,3 +15,5 @@
 
     <!-- App js -->
     <script src="{{asset('assets/js/app.js')}}"></script>
+    <!-- custom page scripts -->
+    @yield('scripts')

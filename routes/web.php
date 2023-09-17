@@ -19,4 +19,4 @@ Route::get('/', function () {
 });
 
 //Home
-Route::resource('/home',HomeController::class);
+Route::resource('home',HomeController::class);
