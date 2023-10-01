@@ -33,7 +33,7 @@
                 <li class="menu-title"><span data-key="t-menu">Menu</span></li>
                 <li class="nav-item">
                     <a class="nav-link menu-link active" href="#"  role="button">
-                        <i class="ph-gauge"></i> <span data-key="t-dashboards">Dashboards</span>
+                        <i class="ph-gauge"></i> <span data-key="t-dashboards">Tableau de bord</span>
                     </a>
 
                 </li>
@@ -41,7 +41,7 @@
 
                 <li class="nav-item">
                     <a class="nav-link menu-link collapsed" href="#Elèves" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarLayouts">
-                    <i class="ph-gauge"></i> <span data-key="t-layouts">Elèves</span>
+                    <i class="ph-graduation-cap"></i> <span data-key="t-layouts">Elèves</span>
                     </a>
                     <div class="collapse menu-dropdown" id="Elèves">
                         <ul class="nav nav-sm flex-column">
@@ -62,7 +62,7 @@
 
                 <li class="nav-item">
                     <a class="nav-link menu-link collapsed" href="#Enseignants" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarLayouts">
-                         <i class="ph-gauge"></i> <span data-key="t-layouts">Enseignants</span>
+                         <i class="ph-users-three"></i> <span data-key="t-layouts">Enseignants</span>
                     </a>
                     <div class="collapse menu-dropdown" id="Enseignants">
                         <ul class="nav nav-sm flex-column">
@@ -83,7 +83,7 @@
 
                <li class="nav-item">
                     <a class="nav-link menu-link collapsed" href="#Parents" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarLayouts">
-                        <i class="fa-solid fa-user-group"></i> <span data-key="t-layouts">Parents</span>
+                        <i class="ph-users"></i> <span data-key="t-layouts">Parents</span>
                     </a>
                     <div class="collapse menu-dropdown" id="Parents">
                         <ul class="nav nav-sm flex-column">
@@ -103,9 +103,28 @@
                 <!-- MATIERES -->
                 <li class="nav-item">
                     <a class="nav-link menu-link collapsed" href="#Matières" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarLayouts">
-                        <i class="fa-solid fa-user-group"></i> <span data-key="t-layouts">Matières</span>
+                        <i class="ph-books"></i> <span data-key="t-layouts">Matières</span>
                     </a>
                     <div class="collapse menu-dropdown" id="Matières">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+                                <a href="#"  class="nav-link">Primaire</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#"  class="nav-link" >Collège</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#"  class="nav-link">Lycée</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <!-- EMPLOIS DU TEMPS -->
+                <li class="nav-item">
+                    <a class="nav-link menu-link collapsed" href="#Emplois" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarLayouts">
+                        <i class="ph-calendar"></i> <span data-key="t-layouts">Emplois du Temps</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="Emplois">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
                                 <a href="#"  class="nav-link">Primaire</a>
@@ -122,7 +141,7 @@
             <!-- DEVOIRS-->
             <li class="nav-item">
                     <a class="nav-link menu-link collapsed" href="#Devoirs" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarLayouts">
-                        <i class="fa-solid fa-user-group"></i> <span data-key="t-layouts">Devoirs</span>
+                        <i class="ri-file-list-3-line"></i> <span data-key="t-layouts">Devoirs</span>
                     </a>
                     <div class="collapse menu-dropdown" id="Devoirs">
                         <ul class="nav nav-sm flex-column">
@@ -143,7 +162,7 @@
 
             <li class="nav-item">
                     <a class="nav-link menu-link collapsed" href="#Examens" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarLayouts">
-                        <i class="fa-solid fa-user-group"></i> <span data-key="t-layouts">Examens</span>
+                        <i class="ph-folders"></i> <span data-key="t-layouts">Examens</span>
                     </a>
                     <div class="collapse menu-dropdown" id="Examens">
                         <ul class="nav nav-sm flex-column">
@@ -163,7 +182,7 @@
             <!-- NOTES ET BULLETINS -->
             <li class="nav-item">
                     <a class="nav-link menu-link collapsed" href="#Notes" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarLayouts">
-                        <i class="fa-solid fa-user-group"></i> <span data-key="t-layouts">Notes et Bulletins</span>
+                        <i class="ph-files"></i> <span data-key="t-layouts">Notes et Bulletins</span>
                     </a>
                     <div class="collapse menu-dropdown" id="Notes">
                         <ul class="nav nav-sm flex-column">
@@ -200,8 +219,39 @@
                                     </div>
                             </li>
                         </ul>
-                </div>
-            </li>
+                 </div>
+               </li>
+
+                <!-- PAIEMENTS ET CAISSES-->
+
+              <li class="nav-item">
+                    <a class="nav-link menu-link collapsed" href="#Paiements" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarLayouts">
+                        <i class="ph-credit-card"></i> <span data-key="t-layouts">Paiements et Caisse</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="Paiements">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+                                <a href="#"  class="nav-link">Paiements</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#"  class="nav-link">Caisse</a>
+                            </li>
+                        </ul>
+                    </div>
+              </li>
+              <!-- UTILISATEURS-->
+              <li class="nav-item">
+                    <a class="nav-link menu-link collapsed" href="#Utilisateurs" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarLayouts">
+                        <i class="ph-user-gear"></i> <span data-key="t-layouts">Utilisateurs</span>
+                    </a>
+                    
+              </li>
+                  <!-- PARAMETRES-->
+              <li class="nav-item">
+                    <a class="nav-link menu-link collapsed" href="#Paramètres" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarLayouts">
+                        <i class="ph-gear"></i> <span data-key="t-layouts">Paramètres</span>
+                    </a>
+              </li>
             </ul>
         </div>
         <!-- Sidebar -->
