@@ -4,18 +4,18 @@
     <div class="navbar-brand-box">
         <a href="#" class="logo logo-dark">
             <span class="logo-sm">
-                <img src="assets/images/logo2.png" alt="" height="22">
+                <img src="{{asset('assets/images/logo2.png')}}" alt="" height="22">
             </span>
             <span class="logo-lg">
-                <img src="assets/images/logo-dark.png" alt="" height="22">
+                <img src="{{asset('assets/images/logo-dark.png')}}" alt="" height="22">
             </span>
         </a>
         <a href="#" class="logo logo-light">
             <span class="logo-sm">
-                <img src="assets/images/logo-sm.png" alt="" height="22">
+                <img src="{{asset('assets/images/logo-sm.png')}}" alt="" height="22">
             </span>
             <span class="logo-lg">
-                <img src="assets/images/logo2.png" alt="" height="52">
+                <img src="{{asset('assets/images/logo2.png')}}" alt="" height="52">
             </span>
         </a>
         <button type="button" class="btn btn-sm p-0 fs-3xl header-item float-end btn-vertical-sm-hover" id="vertical-hover">
@@ -32,7 +32,7 @@
 
                 <li class="menu-title"><span data-key="t-menu">Menu</span></li>
                 <li class="nav-item">
-                    <a class="nav-link menu-link active" href="#"  role="button">
+                    <a class="nav-link menu-link {{ routeActive('home') }}" href="/home"  role="button">
                         <i class="ph-gauge"></i> <span data-key="t-dashboards">Tableau de bord</span>
                     </a>
 
@@ -40,13 +40,13 @@
                 <!-- ELEVES -->
 
                 <li class="nav-item">
-                    <a class="nav-link menu-link collapsed" href="#Elèves" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarLayouts">
+                    <a class="nav-link menu-link collapsed {{ routeMenuActive('students') }}" href="#Elèves" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarLayouts">
                     <i class="ph-graduation-cap"></i> <span data-key="t-layouts">Elèves</span>
                     </a>
-                    <div class="collapse menu-dropdown" id="Elèves">
+                    <div class="collapse menu-dropdown {{ openSubMenu('primary/students') }}" id="Elèves">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a href="#"  class="nav-link">Primaire</a>
+                                <a href="/primary/students"  class="nav-link {{ routeActive('primary/students') }}">Primaire</a>
                             </li>
                             <li class="nav-item">
                                 <a href="#"  class="nav-link">Collège</a>

@@ -5,7 +5,7 @@
     
     <!-- list js-->
     <script src="{{asset('assets/js/list.min.js')}}"></script>
-    <script src="{{asset('assets/js/list.pagination.min.js')}}"></script>
+   
     
     <!-- apexcharts -->
     <script src="{{asset('assets/js/apexcharts.min.js')}}"></script>

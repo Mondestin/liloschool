@@ -1,7 +1,8 @@
 <?php
-
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PrimaryStudentController;
+use Illuminate\Support\Facades\Route;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +21,14 @@ Route::get('/', function () {
 
 //Home
 Route::resource('home',HomeController::class);
+
+
+// ---------------PRIMARY ROUTES-----------------------------
+Route::prefix('primary')->group(function () {
+   
+
+// STUDENTS
+// Route::resource('students',PrimaryStudentController::class);
+Route::get('students', [PrimaryStudentController::class, 'index'])->name('primary.students.index');
+
+ });

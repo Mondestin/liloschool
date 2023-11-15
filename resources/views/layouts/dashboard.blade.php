@@ -11,6 +11,7 @@
 <head>
 
  @include('layouts.head')
+ @yield('page_head')
 </head>
 
 <body> 
@@ -42,8 +43,9 @@
         <i class="bi bi-caret-up fs-3xl"></i>
     </button>
     <!--end back-to-top-->
-
+@yield('page_scripts')
  @include('layouts.scripts')
+ @stack('scripts')
 </body>
 
 </html>
