@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('home');
 });
 
 //Home
@@ -30,5 +30,5 @@ Route::prefix('primary')->group(function () {
 // STUDENTS
 // Route::resource('students',PrimaryStudentController::class);
 Route::get('students', [PrimaryStudentController::class, 'index'])->name('primary.students.index');
-
+Route::get('students/registration', [PrimaryStudentController::class, 'create'])->name('primary.students.create');
  });

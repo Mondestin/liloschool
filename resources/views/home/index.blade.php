@@ -1,4 +1,7 @@
 @extends('layouts.dashboard')
+@section('page_title')
+  Tableau de bord
+@endsection
 @section('content')
 <div class="page-content">
         <div class="container-fluid">

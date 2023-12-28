@@ -9,7 +9,11 @@ use Illuminate\Database\Eloquent\Model;
 class PrimaryStudent extends Model
 {
     use HasFactory;
-
+    protected $casts = [
+        'stDob'  => 'date:d-m-Y',
+        'stDateJoin' => 'date:d-m-Y'
+    ];
+    
     // create new factory data
     protected static function newFactory()
     {

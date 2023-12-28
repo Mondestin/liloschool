@@ -43,10 +43,10 @@
                     <a class="nav-link menu-link collapsed {{ routeMenuActive('students') }}" href="#Elèves" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarLayouts">
                     <i class="ph-graduation-cap"></i> <span data-key="t-layouts">Elèves</span>
                     </a>
-                    <div class="collapse menu-dropdown {{ openSubMenu('primary/students') }}" id="Elèves">
+                    <div class="collapse menu-dropdown {{ openSubMenu('primary/*') }}" id="Elèves">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a href="/primary/students"  class="nav-link {{ routeActive('primary/students') }}">Primaire</a>
+                                <a href="/primary/students"  class="nav-link {{ routeActive('primary/*') }}">Primaire</a>
                             </li>
                             <li class="nav-item">
                                 <a href="#"  class="nav-link">Collège</a>
